@@ -18,8 +18,15 @@
 .profile-name .material-symbols-outlined {
     font-size: 24px;
     color: #007bff;
-    margin-left: 4px;
+
 }
+      .profile-name .material-symbols-outlined {
+            font-size: 20px;
+            color: white;
+       background-color: #007bff; 
+       margin-left: 4px;
+       border-radius: 100%; }
+
 
         .profile-description {
             font-size: 12px;
@@ -180,8 +187,6 @@
             display: none; /* Menyembunyikan halaman pengaturan pada awalnya */
         }
         
-        
-        
     </style>
 </head>
 <body>
@@ -192,11 +197,20 @@
                 <img src="https://iili.io/2CHtVnt.md.jpg" alt="Profile" class="circle-image">
             </div>
             <p class="profile-name">Tommy
-                <span class="material-symbols-outlined">new_releases</span>
+                <span class="material-symbols-outlined">check_circle</span>
             </p>
             <p class="profile-description">Web Developer | Teknologi dan Desain</p>
-            
-            <!-- Menambahkan pembungkus untuk ikon -->
+
+            <!-- Menambahkan tombol untuk media sosial -->
+            <div class="buttons">
+                <button onclick="redirect('https://tommydev27.github.io/tommy.website3/')">Gambar Kreatif</button>
+                <button onclick="redirect('https://instagram.com')">Instagram</button>
+                <button onclick="redirect('https://tommydev27.github.io/tommy.website-demo/')">User interface</button>
+                <button onclick="redirect('https://threads.net')">Threads</button>
+                <button onclick="redirect('https://tommydev27.github.io/tommy.developer4/')">Change Name</button>
+            </div>
+
+            <!-- Pindahkan bagian ikon ke bawah -->
             <div class="header-icons">
                 <button onclick="redirect('https://codepen.io/pen/')">
                     <span class="material-symbols-outlined">deployed_code</span>
@@ -211,19 +225,10 @@
                     <span class="material-symbols-outlined">adb</span>
                 </button>
             </div>
-
-            <!-- Menambahkan tombol untuk media sosial -->
-            <div class="buttons">
-                <button onclick="redirect('https://facebook.com')">Facebook</button>
-                <button onclick="redirect('https://instagram.com')">Instagram</button>
-                <button onclick="redirect('https://youtube.com')">YouTube</button>
-                <button onclick="redirect('https://threads.net')">Threads</button>
-                <button onclick="nextPage()">Informat</button>
-            </div>
         </div>
 
         <footer>Design Tommy | Versi 1.0 ®</footer>
-        
+
         <!-- Tombol mode gelap -->
         <button id="toggle-dark-mode" onclick="toggleDarkMode()">
             <span class="material-symbols-outlined">toggle_off</span>
