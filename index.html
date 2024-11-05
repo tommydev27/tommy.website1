@@ -229,25 +229,26 @@
 
         <footer>Design Tommy | Versi 1.0 ®</footer>
 
-        <!-- Tombol mode gelap -->
-        <button id="toggle-dark-mode" onclick="toggleDarkMode()">
-            <span class="material-symbols-outlined">toggle_off</span>
-        </button>
-    </div>
+  <!-- Tombol untuk mode gelap -->
+    <button id="toggle-dark-mode" onclick="toggleDarkMode()">
+        <span id="toggle_icon" class="material-symbols-outlined">toggle_off</span>
+    </button>
 
     <script>
-        function redirect(url) {
-            window.location.href = url;
-        }
-
+        // Fungsi untuk mengalihkan mode gelap
         function toggleDarkMode() {
+            // Menambah atau menghapus kelas 'dark-mode' pada body
             document.body.classList.toggle('dark-mode');
-        }
-
-        function nextPage() {
-            // Aksi untuk tombol "Selanjutnya"
-            alert("Akan dialihkan ke halaman selanjutnya!");
+            
+            // Mengubah ikon dari 'toggle_off' ke 'toggle_on' dan sebaliknya
+            const toggleIcon = document.getElementById('toggle_icon');
+            if (document.body.classList.contains('dark-mode')) {
+                toggleIcon.textContent = 'toggle_on'; // Ganti dengan ikon toggle_on
+            } else {
+                toggleIcon.textContent = 'toggle_off'; // Kembali ke ikon toggle_off
+            }
         }
     </script>
+
 </body>
 </html>
