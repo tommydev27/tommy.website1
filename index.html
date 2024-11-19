@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
     <title>tommy.developer</title>
     <style>
+    
 .profile-name {
-    font-size: 20px;
-    font-weight: 650; /* Menambahkan ketebalan pada font */
+    font-size: 18px;
+    font-weight: 800; /* Menambahkan ketebalan pada font */
     display: flex;
     align-items: center;
     text-align: left;
     margin-bottom: 5px;
 }
 
-.profile-name .material-symbols-outlined {
-    font-size: 24px;
-    color: #007bff;
 
-}
       .profile-name .material-symbols-outlined {
-            font-size: 15px;
+            font-size: 18px;
             color: white;
+                margin-bottom: 4px;
        background-color: #007bff; 
-       margin-left: 4px;
+       margin-left: 5px;
        border-radius: 100%; }
 
 
         .profile-description {
-            font-size: 12px;
+            font-size: 10px;
             color: gray;
             text-align: left;
-            margin-top: 0;
+            margin-top: 0px;
         }
 
         * {
@@ -95,77 +97,34 @@
             background-color: white;
         }
 
-.header-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding: 6px;
-    box-shadow: 0 0px  10px hsl(0, 0%, 69%);
-    border-radius: 80px;
-    background: rgba(255, 255, 255, 0.8);
-}
 
-.header-icons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0px  5px hsl(0, 0%, 69%); /* Bayangan hitam */
-}
-
-.header-icons button:hover {
-    background-color: #007bff;
-}
-
-
-/* CSS untuk tombol */
 .buttons button {
-    font-weight: bold; /* Membuat teks tebal */
-    color: #FF5733;    /* Mengubah warna teks, ganti dengan warna yang Anda inginkan */
-    border: none;      /* Menghilangkan border tombol */
-    background-color: #f0f0f0; /* Warna latar belakang tombol */
-    padding: 10px 20px; /* Padding di dalam tombol */
-    font-size: 16px;    /* Ukuran font */
-    cursor: pointer;   /* Menambahkan kursor pointer ketika hover */
-    transition: background-color 0.3s; /* Efek transisi saat hover */
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    gap: 8px; 
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Efek saat hover pada tombol */
 .buttons button:hover {
-    background-color: #ddd; /* Warna latar belakang saat hover */
-}
-
-
-
-        .buttons {
-            margin-top: 10px;
+    background-color: #007bff;
+    color: white;
         }
 
-        .buttons button {
-            width: 100%;
-            margin: 8px 0;
-            padding: 8px;
-            background-color: white; 
-            box-shadow: 0 0px  7px hsl(0, 0%, 69%);
-            /* Warna latar belakang tombol */
-            border: none; /* Menghilangkan border default */
-            color: black; /* Warna teks tombol */
-            border-radius: 80px; /* Radius untuk sudut tombol */
-            cursor: pointer; /* Pointer saat hover */
-            transition: background-color 0.3s ease; /* Efek transisi */
-            font-size: 13px; /* Ukuran font tombol */
-        }
-
-        .buttons button:hover {
-            background-color: #007bff; /* Warna saat hover */
-        }
+.buttons button span.material-symbols-outlined {
+    font-size: 18px;
+      }
 
         footer {
             margin-top: 18px;
@@ -174,37 +133,49 @@
             transition: color 0.3s ease;
         }
 
-        /* Gaya untuk mode gelap */
-        .dark-mode .profile-name,
-        .dark-mode footer {
-            color: #7CFC00;
-        }
-
-        .dark-mode {
-            background: black;
-            color: white;
-        }
-
-        /* Gaya untuk tombol mode gelap */
-#toggle-dark-mode {
-    position: absolute;
-    bottom: 0px;
-    right: 20px;
-    color: black; /* Warna teks default */
-    padding: 10px;
-    background: none; /* Tidak ada latar belakang default */
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.dark-mode #toggle-dark-mode {
-    color: white; /* Warna teks saat mode gelap */
-    background: none; /* Tidak ada latar belakang untuk mode gelap */
-}
         .settings-card {
-            display: none; /* Menyembunyikan halaman pengaturan pada awalnya */
-        }
-        
+            display: none;
+            }
+h2 {
+  font-size: 10px;
+  color: #333333;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  
+    }
+
+h3 {
+  font-size: 10px;
+  color: #333333;
+  text-align: center;
+  display: flex;
+ font-family: 'Siegra', monospace;
+  align-items: center;
+  justify-content: center;
+margin-top: 10px;  
+  }
+.material-symbols-outlined {
+  font-size: 15px;
+  color: #000;
+  margin-top: 0px;  
+    }
+
+    /* CSS untuk teks digital */
+    .digital-text {
+      font-size: 8px; /* Ukuran font */
+      color: #000; /* Warna hijau seperti tampilan digital */
+      font-family: 'Press Start 2P', monospace; /* Font digital dari Google Fonts */
+      letter-spacing: 1px; /* Menambah jarak antar huruf */
+      text-align: center; /* Meratakan teks ke tengah */
+      margin-top: 20px; /* Menambahkan jarak atas */
+        gap: 10px;
+    }
+
+
+
     </style>
 </head>
 <body>
@@ -214,66 +185,39 @@
                 <img src="https://iili.io/2CdXQ1e.md.png" alt="Alex Musk" class="profile-image">
                 <img src="https://iili.io/2CHtVnt.md.jpg" alt="Profile" class="circle-image">
             </div>
-            <p class="profile-name">Tommy
-                <span class="material-symbols-outlined">check_circle</span>
+            <p class="profile-name">TOMMY
+          <span class="material-symbols-outlined">check_circle</span>
             </p>
             <p class="profile-description">Web Developer | Teknologi dan Desain</p>
 
-            <!-- Menambahkan tombol untuk media sosial -->
-            <div class="buttons">
-                <button onclick="redirect('https://tommydev27.github.io/tommy.website3/')">Pict Schme</button>
-                <button onclick="redirect('https://tommydev27.github.io/tommydev2711/')">String Text</button>
-                <button onclick="redirect('https://tommydev27.github.io/tommy.website-demo/')">Intro</button>
-                <button onclick="redirect('https://tommydev27.github.io/Keyboardtmdev/')">Keyboard</button>
-                <button onclick="redirect('https://tommydev27.github.io/tommy.developer4/')">Change Name</button>
-            </div>
-
-            <!-- Pindahkan bagian ikon ke bawah -->
-            <div class="header-icons">
-                <button onclick="redirect('https://codepen.io/pen/')">
-                    <span class="material-symbols-outlined">deployed_code</span>
-                </button>
-                <button onclick="redirect('https://tommydev27.github.io/tommy.inputdata/')">
-                    <span class="material-symbols-outlined">play_circle</span>
-                </button>
-                <button onclick="redirect('https://example.com/settings')">
-                    <span class="material-symbols-outlined">all_inbox</span>
-                </button>
-                <button onclick="redirect('https://tommydev27.github.io/tommy.website-demo/')">
-                    <span class="material-symbols-outlined">adb</span>
-                </button>
-            </div>
-        </div>
-
+     <!-- Tombol dengan ikon -->
+        <div class="buttons">
+            <button onclick="redirect('https://tommydev27.github.io/tommy.website3/')">
+                <span class="material-symbols-outlined">image</span>PICT SCHME
+            </button>
+            <button onclick="redirect('https://tommydev27.github.io/Keyboardtmdev/')">
+                <span class="material-symbols-outlined">keyboard</span>KEYBOARD 2
+            </button>
+            <button onclick="redirect('https://tommydev27.github.io/tommydev2711/')">
+                <span class="material-symbols-outlined">text_snippet</span>STRING TEXT
+            </button>
+            <button onclick="redirect('https://tommydev27.github.io/tommy.website-demo/')">
+                <span class="material-symbols-outlined">info</span>Info-Website
+            </button>
+         </div>
+        <div>
+        <h2>
+          website masih dalam pengembangan </h2>
+          
+    <h3 class="digital-text">ANDROlD VERSI
+      <span class="material-symbols-outlined">android</span> </h3> 
+          </div>
         <footer>Design Tommy | Versi 1.0 ®</footer>
-
-  <!-- Tombol untuk mode gelap -->
-    <button id="toggle-dark-mode" onclick="toggleDarkMode()">
-        <span id="toggle_icon" class="material-symbols-outlined">toggle_off</span>
-    </button>
-
-    <script>
-        // Fungsi untuk mengalihkan mode gelap
-        function toggleDarkMode() {
-            // Menambah atau menghapus kelas 'dark-mode' pada body
-            document.body.classList.toggle('dark-mode');
-            
-            // Mengubah ikon dari 'toggle_off' ke 'toggle_on' dan sebaliknya
-            const toggleIcon = document.getElementById('toggle_icon');
-            if (document.body.classList.contains('dark-mode')) {
-                toggleIcon.textContent = 'toggle_on'; // Ganti dengan ikon toggle_on
-            } else {
-                toggleIcon.textContent = 'toggle_off'; // Kembali ke ikon toggle_off
-            }
-        }
-    </script>
+       </div>
+    </div>
     <script>
         function redirect(url) {
             window.location.href = url;
-        }
-
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
         }
 
         function nextPage() {
@@ -282,4 +226,5 @@
         }
     </script>
 </body>
+
 </html>
